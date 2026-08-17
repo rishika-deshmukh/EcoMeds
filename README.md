@@ -67,19 +67,24 @@ To eliminate avoidable pharmaceutical incineration and landfill disposal by buil
 
 Public landing page with donor and recipient sign-in options.
 
-![EcoMeds Landing Page](./screenshots/landing-page.png)
+![EcoMeds Landing Page]
+(./screenshots/landing-page.png)
+(./screenshots/landing-page2.png)
+(./screenshots/landing-page3.png)
 
 ### **Donor Dashboard (Private Inventory)**
 
 Private inventory dashboard showing isolated surplus inventory and ESG metrics.
 
-![Donor Inventory Dashboard](./screenshots/donor-dashboard.png)
+![Donor Inventory Dashboard]
+(./screenshots/donor-dashboard.png)
+(./screenshots/donor-dashboard2.png)
 
 ### **Surplus Medication Registration Modal**
 
 Modal for donors to enter drug name, batch number, quantity, and expiry date.
 
-![List Store Surplus Modal](./screenshots/add-medication-modal.png)
+![List Store Surplus Modal](./screenshots/add-medication.png)
 
 ### **Recipient NGO Requisition Marketplace**
 
