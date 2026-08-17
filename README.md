@@ -68,7 +68,7 @@ To eliminate avoidable pharmaceutical incineration and landfill disposal by buil
 Public landing page with donor and recipient sign-in options.
 
 ![EcoMeds Landing Page Img 1](./screenshots/landing-page.png)
-![EcoMeds Landing Page Img 2](./screenshots/landing-page2.png)
+![EcoMeds Landing Page Img 2](./screenshots/landing_-page2.png)
 ![EcoMeds Landing Page Img 3](./screenshots/landing-page3.png)
 
 ### **Donor Dashboard (Private Inventory)**
