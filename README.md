@@ -90,13 +90,13 @@ Aggregated catalog showing available supplies, donor types, expiry categories, a
 
 ![Recipient Marketplace](./screenshots/recipient-dashboard.png)
 
-#### 5. Requisition Cart & Batch Review Modal
+#### **Requisition Cart & Batch Review Modal**
 
 Review interface for NGOs to verify selected batches, receiving clinics, and total rescued value before confirming claims.
 
 ![Requisition Batch Review](./screenshots/requisition-cart-modal.png)
 
-#### 6. Chain-of-Custody Transfer Voucher (Order Confirmed)
+#### **Chain-of-Custody Transfer Voucher (Order Confirmed)**
 
 Digital dispatch receipt generating verified voucher IDs and batch claim confirmations for NGO compliance.
 
