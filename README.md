@@ -14,7 +14,7 @@ With **Role-Based Access Control (RBAC)**, dynamic expiry categorization, and au
 
 ![EcoMeds Landing Page](./screenshots/landing-page.png) 
 ![EcoMeds Landing Page](./screenshots/landing_-page2.png)
-![EcoMeds Landing Page](./screenshots/landing_-page3.png)
+![EcoMeds Landing Page](./screenshots/landing-page3.png)
 
 ---
 
