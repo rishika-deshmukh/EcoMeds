@@ -8,11 +8,13 @@ With **Role-Based Access Control (RBAC)**, dynamic expiry categorization, and au
 
 ---
 
-## 🖥️ Live Requisition Dashboard
+## 🖥️ Landing Page
 
-> *Real-time surplus inventory tracking, ESG score calculation, and chain-of-custody transfers.*
+> *Circular healthcare portal featuring multi-tenant authentication, ESG metrics, and surplus routing.*
 
-![EcoMeds Landing Page](./screenshots/landing-page.png)
+![EcoMeds Landing Page](./screenshots/landing-page.png) 
+![EcoMeds Landing Page](./screenshots/landing_-page2.png)
+![EcoMeds Landing Page](./screenshots/landing_-page3.png)
 
 ---
 
@@ -49,6 +51,7 @@ With **Role-Based Access Control (RBAC)**, dynamic expiry categorization, and au
 ### Donor Dashboard (Private Ledger & ESG Score)
 > *Tenant-isolated dashboard displaying active batches and corporate sustainability metrics.*
 ![Donor Inventory Dashboard](./screenshots/donor-dashboard.png)
+![Donor Inventory Dashboard](./screenshots/donor-dashboard2.png)
 
 ### Surplus Medication Registration Modal
 > *Data entry interface for cataloging pharmaceutical surplus and expiry dates.*
@@ -56,7 +59,7 @@ With **Role-Based Access Control (RBAC)**, dynamic expiry categorization, and au
 
 ### Recipient NGO Requisition Marketplace
 > *Aggregated catalog showing available supplies, donor types, expiry categories, and requisition cart.*
-![Recipient Marketplace](./screenshots/recipient-catalog.png)
+![Recipient Marketplace](./screenshots/recipient-dashboard.png)
 
 ### Requisition Cart & Batch Review Modal
 > *Review interface for NGOs to verify selected batches, receiving clinics, and total rescued value before confirming claims.*
