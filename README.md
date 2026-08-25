@@ -55,7 +55,7 @@ With **Role-Based Access Control (RBAC)**, dynamic expiry categorization, and au
 
 ### Surplus Medication Registration Modal
 > *Data entry interface for cataloging pharmaceutical surplus and expiry dates.*
-![List Store Surplus Modal](./screenshots/add-medication-modal.png)
+![List Store Surplus Modal](./screenshots/add-medication.png)
 
 ### Recipient NGO Requisition Marketplace
 > *Aggregated catalog showing available supplies, donor types, expiry categories, and requisition cart.*
