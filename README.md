@@ -8,7 +8,7 @@ With **Role-Based Access Control (RBAC)**, dynamic expiry categorization, and au
 
 ---
 
-## 🖥️ Landing Page
+## Landing Page
 
 > *Circular healthcare portal featuring multi-tenant authentication, ESG metrics, and surplus routing.*
 
