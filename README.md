@@ -1,64 +1,122 @@
-# EcoMeds - Pharmaceutical Circular Economy Platform
+# ♻️ EcoMeds: Circular Pharmaceutical Redistribution Platform
 
-A B2B web application that redistributes near-expiry pharmaceuticals from donors to verified recipients, combating medicine waste and supporting global health initiatives aligned with UN SDGs 3 & 12.
+An end-to-end **multi-tenant B2B platform** that reduces pharmaceutical waste by connecting **Enterprise Warehouses** and **Retail Pharmacies** with verified **Non-Profit Organizations (NGOs)**, community clinics, and shelter homes for the redistribution of surplus and near-expiry medicines.
 
-## Features
+With **Role-Based Access Control (RBAC)**, dynamic expiry categorization, and automated **ESG & CSR analytics**, EcoMeds enables a compliant, transparent, and sustainable pharmaceutical supply chain while supporting **UN SDGs 3 and 12**.
 
-### Donor Portal (`/donor`)
-- Inventory management with expiry tracking
-- Color-coded shelf-life indicators (Critical, Urgent, Eligible)
-- Multi-step medication listing form
-- Donation request management
-- Tax benefit tracking
+![React 18](https://img.shields.io/badge/React-18-20232A?style=flat&logo=react&logoColor=61DAFB)![TypeScript](https://img.shields.io/badge/TypeScript-007ACCstyle=flat&logo=typescript&logoColor=white)![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)![pnpm](https://img.shields.io/badge/pnpm-F69220?style=flat&logo=pnpm&logoColor=white)![Web Storage API](https://img.shields.io/badge/Web_Storage_API-F7DF1E?style=flat&logo=javascript&logoColor=black)![Lucide Icons](https://img.shields.io/badge/Lucide-Icons-F56565style=flat&logo=feather&logoColor=white)![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat&logo=eslint&logoColor=white)
 
-### Recipient Portal (`/recipient`)
-- Medication search and discovery
-- Urgent request engine
-- Delivery confirmation system
+---
 
-### Impact Dashboard (`/impact`)
-- Real-time sustainability metrics
-- Financial value saved
-- CO2 prevented
-- Sustainability leaderboard
+## 🖥️ Live Requisition Dashboard
 
-### Admin Compliance (`/admin`)
-- Organization verification
-- Registration review
-- Compliance monitoring
+> *Real-time surplus inventory tracking, ESG score calculation, and chain-of-custody transfers.*
 
-## Tech Stack
+![EcoMeds Landing Page](./screenshots/landing-page.png)
 
-- **Framework**: React 19 + TypeScript + Vite
-- **Styling**: Tailwind CSS + Shadcn UI components
-- **Database**: Supabase (PostgreSQL)
-- **Authentication**: Supabase Auth
-- **State Management**: React Query
-- **Notifications**: Sonner (toast notifications)
+---
+
+## Key Features
+
+### 1. Multi-Tenant Role-Based Access Control (RBAC)
+- **Enterprise Factory Portal:** Manage bulk pharmaceutical inventory, high-volume batches, and ESG metrics.
+- **Retail Pharmacy Portal:** Manage shelf surplus stock and rapid-expiry units.
+- **Recipient NGO Marketplace:** Centralized hub where verified clinics, dispensaries, orphanages, and shelter homes can browse and claim available batches.
+- **Secure Session Routing:** Verification logic ensuring private logins and role-scoped dashboard views.
+
+### 2. Smart Inventory & Expiry Management
+- **Expiry Urgency Categorization:** Medicines are automatically evaluated against shelf-life thresholds:
+  - 🔴 **Critical:** Less than 30 days
+  - 🟡 **Urgent:** Less than 60 days
+  - 🟢 **Eligible:** Less than 90+ days
+- **Batch-Level Tracking:** Track batch number, NDC identifiers, category, unit type, and quantities.
+- **Tenant Data Isolation:** Scoped inventory access preventing cross-facility data leakage between competing donors.
+
+### 3. Real-Time Requisition Marketplace
+- **Smart Filtering:** Dynamic query filtering across drug names, therapeutic categories, donor entities, and facility tiers (Factory vs Retail).
+- **Multi-Item Requisition Cart:** NGOs can select multiple batches and place aggregated claim requests.
+- **Real-Time Stock Updates:** Automatic state synchronization moving batches from **Available** to **Claimed**.
+
+### 4. ESG & CSR Analytics Engine
+- **Emissions Diversion Model:** Automatically calculates landfill $CO_2$ kilograms prevented from incineration and landfill dumping.
+- **ESG Scorecard:** Live index evaluating donor circular sustainability compliance.
+- **Tax Value Estimation:** Calculates fair-market value assessments for CSR tax relief and audit trails.
+
+---
+
+## Platform Screenshots
+
+### Donor Dashboard (Private Ledger & ESG Score)
+> *Tenant-isolated dashboard displaying active batches and corporate sustainability metrics.*
+![Donor Inventory Dashboard](./screenshots/donor-dashboard.png)
+
+### Surplus Medication Registration Modal
+> *Data entry interface for cataloging pharmaceutical surplus and expiry dates.*
+![List Store Surplus Modal](./screenshots/add-medication-modal.png)
+
+### Recipient NGO Requisition Marketplace
+> *Aggregated catalog showing available supplies, donor types, expiry categories, and requisition cart.*
+![Recipient Marketplace](./screenshots/recipient-catalog.png)
+
+### Requisition Cart & Batch Review Modal
+> *Review interface for NGOs to verify selected batches, receiving clinics, and total rescued value before confirming claims.*
+![Requisition Batch Review](./screenshots/requisition-cart-modal.png)
+
+### Chain-of-Custody Transfer Voucher
+> *Digital dispatch receipt generating verified voucher IDs and batch claim confirmations for NGO compliance.*
+![Chain of Custody Voucher](./screenshots/transfer-voucher-receipt.png)
+
+---
+
+## Architecture & Data Modeling
+
+### Frontend & Build Tools
+* **Core Framework:** React 18 with TypeScript for strict type safety
+* **Build Tool:** Vite for rapid bundling and hot module replacement
+* **Styling:** Tailwind CSS for modular responsive UI
+* **Icons:** Lucide React
+
+### State Management & Data Persistence
+* **Web Storage API:** Browser `localStorage` engine managing persistent user records, isolated donor inventory ledgers, and claim transitions.
+* **Reactive State:** Scoped React hooks managing dynamic multi-filter searches, reactive cart counters, and modal states.
+
+### Expiry Urgency Categorization
+| Tier | Window | Operational Action |
+| :--- | :--- | :--- |
+| **Critical** | < 30 Days | High-priority flag; expedited redistribution to immediate-need trauma centers and shelter homes. |
+| **Urgent** | 30 - 60 Days | Standard requisition matching for high-turnover primary care dispensaries. |
+| **Eligible** | 60 - 90+ Days | Standard circular catalog listing for general NGO inventory replenishment. |
+
+---
+
+## System Workflow
+
+1. **Registration & Auth:** Register as an Enterprise Factory, Retail Store, or Recipient NGO.
+2. **Batch Upload:** Donors enter medication strength, batch number, unit count, and expiration date.
+3. **Private Ledger Tracking:** Donors track individual donation value, environmental offsets, and batch statuses.
+4. **Catalog Discovery:** NGOs browse, filter by donor type or category, and add rescue batches to a requisition cart.
+5. **Impact Review & Claim:** NGOs confirm batch claims, generating an auditable chain-of-custody transfer voucher.
+
+---
 
 ## Getting Started
 
-1. Clone the repository
-2. Install dependencies: `npm install`
-3. Configure Supabase credentials in `.env` file:
-   - `NEXT_PUBLIC_SUPABASE_URL`
-   - `NEXT_PUBLIC_SUPABASE_KEY`
-4. Run the development server: `npm run dev`
+### Prerequisites
+* Node.js (v18+)
+* pnpm or npm
 
-## Database Schema
+### Installation & Local Run
+```bash
+# 1. Clone repository
+git clone [https://github.com/your-username/ecomeds.git](https://github.com/your-username/ecomeds.git)
 
-The application uses the following tables:
-- `profiles` - User organizations (donors, recipients, admins)
-- `medications` - Pharmaceutical inventory
-- `donation_requests` - Transfer requests
-- `impact_metrics` - Sustainability metrics
+# 2. Navigate to directory
+cd ecomeds
 
-## Development
+# 3. Install dependencies
+pnpm install
+# or: npm install
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-
-## License
-
-MIT
+# 4. Start local development server
+pnpm run dev
+# or: npm run dev
