@@ -6,6 +6,7 @@ With **Role-Based Access Control (RBAC)**, dynamic expiry categorization, and au
 
 ![React 18](https://img.shields.io/badge/React-18-20232A?style=flat&logo=react&logoColor=61DAFB)![TypeScript](https://img.shields.io/badge/TypeScript-007ACCstyle=flat&logo=typescript&logoColor=white)![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)![pnpm](https://img.shields.io/badge/pnpm-F69220?style=flat&logo=pnpm&logoColor=white)![Web Storage API](https://img.shields.io/badge/Web_Storage_API-F7DF1E?style=flat&logo=javascript&logoColor=black)![Lucide Icons](https://img.shields.io/badge/Lucide-Icons-F56565style=flat&logo=feather&logoColor=white)![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat&logo=eslint&logoColor=white)
 
+LIVE: https://ecomeds-nine.vercel.app/
 ---
 
 ## Landing Page
